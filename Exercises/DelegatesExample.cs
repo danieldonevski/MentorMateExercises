@@ -18,10 +18,10 @@ namespace Exercises
             while (true)
             {
                 char charKey = Console.ReadKey(true).KeyChar;
-                if (KeyClick != null)
-                {
-                    KeyClick(charKey);
-                }
+                //if (KeyClick != null)
+                //{
+                //    KeyClick(charKey);
+                //}
                 KeyClick?.Invoke(charKey);
             }
         }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exercises
 {
-    class Program
+    class ExercisesEventsDelegatesProgram
     {
         static void Main(string[] args)
         {
             DelegatesExample delegatesExample = new DelegatesExample();
             //delegatesExample.KeyClick = new KeyPress(OnClick);
-            //delegatesExample.KeyClick = OnClick;
+            delegatesExample.KeyClick = OnClick;
             //delegatesExample.Start();
             EventsExample EventsExample = new EventsExample();
             EventsExample.KeyClick += OnClick;
