@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace ExercisesAbstractionInterfaces
 {
-    interface IPerson
+    interface IVehicle
     {
-        int Age { get; set; }
-        string Name { get; set; }
-        void GrowUp(int years);
-        void IntroduceYourself();
+        int Year { get; set; }
+        string Model { get; set; }
+
+        //void Drive();
+        
+        bool Moving { get; set; }
+
+
     }
 }

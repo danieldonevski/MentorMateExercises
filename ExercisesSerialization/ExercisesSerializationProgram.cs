@@ -20,28 +20,23 @@ namespace ExercisesSerialization
             Console.WriteLine("FacultyNumber = {0}", ser.FacultyNumber);
             Console.WriteLine();
     
-            JSONSerialization jsonSer = new JSONSerialization();
-            jsonSer.Name = "Gogo";
-            jsonSer.FacultyNumber = 12345;
-            Ser();
+            //JSONSerialization jsonSer = new JSONSerialization();
+            //jsonSer.Name = "Gogo";
+            //jsonSer.FacultyNumber = 12345;
+            SerAndDes();
          
         }
-        public static void Ser()
+        public static void SerAndDes()
         {
-            JSONSerialization jsonSer = new JSONSerialization();
-            jsonSer.Name = "Gogo";
-            jsonSer.FacultyNumber = 123456;
-            string json = JsonConvert.SerializeObject(jsonSer);
-            File.WriteAllText("json.txt", json);
+            JSONSerialization jsonSerClass = new JSONSerialization();
+            jsonSerClass.Name = "Gogo";
+            jsonSerClass.FacultyNumber = 123456;
+            string jsonSer = JsonConvert.SerializeObject(jsonSerClass);
+            File.WriteAllText("json.txt", jsonSer);
 
-        }
-        public static void DeSer()
-        {
-            JSONSerialization jsonSer = new JSONSerialization();
-            jsonSer.Name = "Gogo";
-            jsonSer.FacultyNumber = 123456;
-            string json = JsonConvert.SerializeObject(jsonSer);
-
+            JSONSerialization jsonDes = JsonConvert.DeserializeObject<JSONSerialization>(jsonSer);
+            Console.WriteLine(jsonDes.Name);
+            Console.WriteLine(jsonDes.FacultyNumber);
         }
     }
 }

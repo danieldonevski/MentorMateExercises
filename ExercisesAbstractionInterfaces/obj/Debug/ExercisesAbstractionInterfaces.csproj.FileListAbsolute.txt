@@ -3,3 +3,4 @@ C:\Users\daniel.donevski\Source\Repos\MentorMateExercises\ExercisesAbstractionIn
 C:\Users\daniel.donevski\Source\Repos\MentorMateExercises\ExercisesAbstractionInterfaces\bin\Debug\ExercisesAbstractionInterfaces.pdb
 C:\Users\daniel.donevski\Source\Repos\MentorMateExercises\ExercisesAbstractionInterfaces\obj\Debug\ExercisesAbstractionInterfaces.exe
 C:\Users\daniel.donevski\Source\Repos\MentorMateExercises\ExercisesAbstractionInterfaces\obj\Debug\ExercisesAbstractionInterfaces.pdb
+C:\Users\daniel.donevski\Source\Repos\MentorMateExercises\ExercisesAbstractionInterfaces\obj\Debug\ExercisesAbstractionInterfaces.csprojResolveAssemblyReference.cache

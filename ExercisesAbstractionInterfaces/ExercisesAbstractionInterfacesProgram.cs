@@ -10,12 +10,21 @@ namespace ExercisesAbstractionInterfaces
     {
         static void Main(string[] args)
         {
-            Person worker = new Worker(28, "Ivan");
-            worker.GrowUp(2);
-            worker.IntroduceYourself();
 
-            Person student = new Student(18, "Ivan");
-            student.IntroduceYourself();
+            Vehicle car = new Car(1908, "Audi");
+           
+            Vehicle truck = new Truck(2008, "MAN");
+
+            car.Start();
+            car.Accelerate();
+
+            truck.Start();
+            truck.Accelerate();
+            truck.Decelerate();
+            truck.Stop();
+            truck.Accelerate();
+            car.Accelerate();
+
         }
     }
 }
