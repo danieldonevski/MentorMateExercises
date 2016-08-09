@@ -43,6 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cars\Audis\AudiBase.cs" />
+    <Compile Include="Cars\Audis\AudiEconomy.cs" />
+    <Compile Include="Cars\Audis\AudiLuxary.cs" />
+    <Compile Include="Cars\Audis\AudiSport.cs" />
+    <Compile Include="Cars\BMWs\BMWBase.cs" />
+    <Compile Include="Cars\BMWs\BMWEconomy.cs" />
+    <Compile Include="Cars\BMWs\BMWLuxary.cs" />
+    <Compile Include="Cars\BMWs\BMWSport.cs" />
+    <Compile Include="Factory\AudiFactory.cs" />
+    <Compile Include="Factory\BMWFactory.cs" />
+    <Compile Include="Cars\IAuto.cs" />
+    <Compile Include="Factory\ICarFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
